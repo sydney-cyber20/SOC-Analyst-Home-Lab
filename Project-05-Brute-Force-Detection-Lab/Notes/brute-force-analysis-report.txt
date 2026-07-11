@@ -1,0 +1,42 @@
+﻿Brute Force Detection Analysis Report
+
+
+Case Summary:
+Multiple failed login attempts were generated against the local Windows user account soc_test. The failed attempts were recorded in Windows Security Logs as Event ID 4625.
+
+
+Lab Activity:
+A test user account named soc_test was confirmed on the Windows endpoint. Several incorrect password attempts were generated using the runas command.
+
+
+Command Used:
+runas /user:soc_test cmd
+
+
+Detection Evidence:
+Windows Event Viewer was used to filter the Security log for Event ID 4625. The filtered results showed multiple failed logon events.
+
+
+Key Event:
+Event ID: 4625
+Event Type: Failed Logon
+Keywords: Audit Failure
+Task Category: Logon
+Account Name: soc_test
+Failure Reason: Unknown user name or bad password
+
+
+Why This Matters:
+Multiple failed logon attempts against the same account can indicate password guessing, brute-force activity, or an unauthorized access attempt.
+
+
+Risk Level:
+Medium
+
+
+SOC Analyst Recommendation:
+Investigate the source of the failed logons, confirm whether the activity was expected, check if other accounts were targeted, and monitor for repeated authentication failures. If this occurred in a real environment, the account should be reviewed and security controls such as account lockout policy and MFA should be considered.
+
+
+Conclusion:
+This lab demonstrated how repeated failed login attempts can be detected using Windows Security Event Logs and Event ID 4625.
