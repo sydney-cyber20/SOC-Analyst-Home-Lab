@@ -1,0 +1,43 @@
+﻿Cloud Security Monitoring Scenario
+
+
+Company Name:
+Sydney Cyber Lab
+
+
+Scenario:
+Sydney Cyber Lab uses cloud services to store business data, manage users, and allow remote access to company systems. The organization wants to monitor cloud activity for suspicious logins, privilege changes, failed access attempts, and unusual administrative actions.
+
+
+Cloud Environment:
+Simulated Cloud Platform
+
+
+Cloud Assets:
+1. Cloud user accounts
+2. Administrator accounts
+3. Cloud storage
+4. Audit logs
+5. Login activity
+6. Access keys
+7. Security groups
+8. Business data
+
+
+Main Security Concerns:
+1. Failed cloud login attempts
+2. Successful login after multiple failures
+3. Administrator privilege changes
+4. New user creation
+5. Access key creation
+6. Public storage exposure
+7. Unusual login location
+8. Unauthorized access to cloud data
+
+
+Monitoring Objective:
+The goal of this project is to review simulated cloud audit logs, identify suspicious cloud activity, create basic detection rules, and document findings in a cloud security monitoring report.
+
+
+Risk Level:
+Medium

@@ -1,0 +1,84 @@
+﻿Cloud Security Monitoring Report
+
+
+Company Name:
+Sydney Cyber Lab
+
+
+Project Title:
+Cloud Security Monitoring Lab
+
+
+Log File Reviewed:
+cloud-audit-logs.csv
+
+
+Environment:
+Simulated Cloud Platform
+
+
+Purpose:
+The purpose of this report is to document suspicious cloud security activity found in simulated cloud audit logs.
+
+
+Summary:
+The cloud audit logs showed multiple suspicious activities, including failed login attempts, a successful login after multiple failures, administrator privilege changes, access key creation, public storage permission changes, and unknown user login attempts.
+
+
+Key Findings:
+
+
+1. Multiple Failed Login Attempts
+User john.user had 5 failed login attempts from source IP 102.45.12.8.
+Severity: Medium
+
+
+2. Successful Login After Failures
+User john.user successfully logged in after multiple failed attempts.
+Severity: High
+
+
+3. New User Created
+admin.user created a new user account named temp.cloud.
+Severity: Medium
+
+
+4. Administrator Policy Attached
+admin.user attached administrator privileges to temp.cloud.
+Severity: High
+
+
+5. Access Key Created
+temp.cloud created a new access key.
+Severity: Medium
+
+
+6. Cloud Storage Made Public
+temp.cloud changed cloud storage bucket permission to public.
+Severity: High
+
+
+7. Unknown User Login Attempts
+unknown.user attempted login from source IP 185.199.108.1 and location Unknown.
+Severity: Medium
+
+
+Risk Assessment:
+The most serious risks are the successful login after failed attempts, administrator privilege assignment, and public cloud storage permission change. These activities may indicate account compromise, privilege escalation, or data exposure.
+
+
+Recommended Actions:
+1. Investigate john.user login activity.
+2. Confirm whether temp.cloud was authorized.
+3. Review administrator policy changes.
+4. Rotate or disable suspicious access keys.
+5. Change public cloud storage permissions back to private.
+6. Review unknown user login attempts.
+7. Enable MFA for all cloud users.
+8. Create alerts for failed logins, privilege changes, access key creation, and public storage changes.
+9. Review cloud audit logs regularly.
+10. Preserve evidence for incident response.
+
+
+Conclusion:
+This lab demonstrated how cloud audit logs can be reviewed to identify suspicious activity. The findings show possible brute-force activity, account compromise, privilege escalation, access key risk, and public data exposure.

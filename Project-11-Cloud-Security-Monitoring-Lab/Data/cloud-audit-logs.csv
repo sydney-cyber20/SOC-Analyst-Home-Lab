@@ -1,0 +1,13 @@
+﻿timestamp,event_name,user,source_ip,location,status,resource,details
+2026-07-11 08:00:12,LoginAttempt,john.user,102.45.12.8,South Africa,Failure,Cloud Console,Incorrect password
+2026-07-11 08:01:30,LoginAttempt,john.user,102.45.12.8,South Africa,Failure,Cloud Console,Incorrect password
+2026-07-11 08:02:44,LoginAttempt,john.user,102.45.12.8,South Africa,Failure,Cloud Console,Incorrect password
+2026-07-11 08:03:58,LoginAttempt,john.user,102.45.12.8,South Africa,Failure,Cloud Console,Incorrect password
+2026-07-11 08:05:11,LoginAttempt,john.user,102.45.12.8,South Africa,Failure,Cloud Console,Incorrect password
+2026-07-11 08:06:25,LoginSuccess,john.user,102.45.12.8,South Africa,Success,Cloud Console,Successful login after multiple failures
+2026-07-11 09:15:02,CreateUser,admin.user,102.45.12.9,South Africa,Success,Identity Service,New user account created: temp.cloud
+2026-07-11 09:20:47,AttachAdminPolicy,admin.user,102.45.12.9,South Africa,Success,Identity Service,Administrator policy attached to temp.cloud
+2026-07-11 10:35:10,CreateAccessKey,temp.cloud,102.45.12.10,South Africa,Success,Access Key Service,New access key created
+2026-07-11 11:42:33,StoragePermissionChange,temp.cloud,102.45.12.10,South Africa,Success,Cloud Storage,Storage bucket permission changed to public
+2026-07-11 12:25:19,LoginAttempt,unknown.user,185.199.108.1,Unknown,Failure,Cloud Console,Invalid username
+2026-07-11 12:26:41,LoginAttempt,unknown.user,185.199.108.1,Unknown,Failure,Cloud Console,Invalid username

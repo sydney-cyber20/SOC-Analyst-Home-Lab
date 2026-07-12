@@ -1,0 +1,141 @@
+﻿Cloud Log Analysis Notes
+
+
+Company Name:
+Sydney Cyber Lab
+
+
+Log File Reviewed:
+cloud-audit-logs.csv
+
+
+Analysis Summary:
+The simulated cloud audit logs were reviewed to identify suspicious cloud security activity. The logs contained failed login attempts, a successful login after multiple failures, new user creation, administrator privilege changes, access key creation, public storage permission changes, and login attempts from an unknown user.
+
+
+Finding 1:
+Multiple failed login attempts were detected for john.user.
+
+
+Evidence:
+john.user had 5 failed LoginAttempt events from source IP 102.45.12.8.
+
+
+Risk:
+This may indicate brute-force activity or password guessing.
+
+
+Severity:
+Medium
+
+
+
+
+Finding 2:
+A successful login occurred after multiple failed login attempts.
+
+
+Evidence:
+john.user had a LoginSuccess event after 5 failed login attempts.
+
+
+Risk:
+This may indicate possible account compromise.
+
+
+Severity:
+High
+
+
+
+
+Finding 3:
+A new cloud user account was created.
+
+
+Evidence:
+admin.user created a new user account named temp.cloud.
+
+
+Risk:
+New user creation should be reviewed to confirm authorization.
+
+
+Severity:
+Medium
+
+
+
+
+Finding 4:
+Administrator privileges were attached to temp.cloud.
+
+
+Evidence:
+admin.user attached an administrator policy to temp.cloud.
+
+
+Risk:
+This may indicate privilege escalation or unauthorized admin access.
+
+
+Severity:
+High
+
+
+
+
+Finding 5:
+A new access key was created.
+
+
+Evidence:
+temp.cloud created a new access key.
+
+
+Risk:
+Access keys can be abused for unauthorized cloud access.
+
+
+Severity:
+Medium
+
+
+
+
+Finding 6:
+Cloud storage permissions were changed to public.
+
+
+Evidence:
+temp.cloud changed cloud storage bucket permission to public.
+
+
+Risk:
+Sensitive business data may be exposed publicly.
+
+
+Severity:
+High
+
+
+
+
+Finding 7:
+Unknown user login attempts were detected.
+
+
+Evidence:
+unknown.user attempted to log in from source IP 185.199.108.1 and location Unknown.
+
+
+Risk:
+This may indicate account enumeration or unauthorized access attempts.
+
+
+Severity:
+Medium
+
+
+Conclusion:
+The simulated cloud audit logs showed several suspicious cloud activities that should be investigated by a SOC or cloud security analyst.

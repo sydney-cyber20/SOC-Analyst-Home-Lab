@@ -1,0 +1,160 @@
+﻿Cloud Security Detection Rules
+
+
+Company Name:
+Sydney Cyber Lab
+
+
+Detection Rule 1:
+Multiple Failed Cloud Login Attempts
+
+
+Logic:
+Trigger an alert when the same user has 5 or more failed login attempts.
+
+
+Related Event:
+LoginAttempt
+
+
+Risk:
+Possible brute-force attack or password guessing.
+
+
+Example From Logs:
+john.user had 5 failed login attempts.
+
+
+Severity:
+Medium
+
+
+
+
+Detection Rule 2:
+Successful Login After Multiple Failures
+
+
+Logic:
+Trigger an alert when a successful login happens after multiple failed login attempts for the same user.
+
+
+Related Events:
+LoginAttempt
+LoginSuccess
+
+
+Risk:
+Possible successful account compromise after password guessing.
+
+
+Example From Logs:
+john.user had multiple failed login attempts followed by a successful login.
+
+
+Severity:
+High
+
+
+
+
+Detection Rule 3:
+Administrator Policy Attached
+
+
+Logic:
+Trigger an alert when administrator privileges are added to a user account.
+
+
+Related Event:
+AttachAdminPolicy
+
+
+Risk:
+Privilege escalation or unauthorized admin access.
+
+
+Example From Logs:
+admin.user attached an administrator policy to temp.cloud.
+
+
+Severity:
+High
+
+
+
+
+Detection Rule 4:
+New Access Key Created
+
+
+Logic:
+Trigger an alert when a new access key is created.
+
+
+Related Event:
+CreateAccessKey
+
+
+Risk:
+Access keys can be abused for unauthorized cloud access.
+
+
+Example From Logs:
+temp.cloud created a new access key.
+
+
+Severity:
+Medium
+
+
+
+
+Detection Rule 5:
+Cloud Storage Made Public
+
+
+Logic:
+Trigger an alert when cloud storage permissions are changed to public.
+
+
+Related Event:
+StoragePermissionChange
+
+
+Risk:
+Sensitive business data may be exposed publicly.
+
+
+Example From Logs:
+temp.cloud changed cloud storage bucket permission to public.
+
+
+Severity:
+High
+
+
+
+
+Detection Rule 6:
+Unknown User Login Attempts
+
+
+Logic:
+Trigger an alert when login attempts are made using an unknown or invalid username.
+
+
+Related Event:
+LoginAttempt
+
+
+Risk:
+Account enumeration or unauthorized access attempt.
+
+
+Example From Logs:
+unknown.user attempted to log in from an unknown location.
+
+
+Severity:
+Medium
