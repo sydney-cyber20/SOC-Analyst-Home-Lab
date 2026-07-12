@@ -1,0 +1,77 @@
+﻿Final Incident Response Report
+
+
+Incident Title:
+Multiple Failed Login Attempts Against Local User Account
+
+
+Incident Type:
+Brute-force / password guessing attempt
+
+
+Severity:
+Medium
+
+
+Affected System:
+Windows-SOC-Lab
+
+
+Affected Account:
+soc_test
+
+
+Detection Sources:
+Windows Security Event Logs
+Splunk SIEM
+
+
+Related Event ID:
+4625 - Failed Logon
+
+
+Executive Summary:
+Multiple failed login attempts were detected against the local Windows user account soc_test. The activity was observed in Windows Event Viewer and confirmed through Splunk SIEM analysis. Splunk showed 10 failed logon events for the same account, which matched a possible brute-force or password guessing pattern.
+
+
+Investigation Summary:
+The Windows audit policy was confirmed to be enabled for logon success and failure events. The account soc_test was confirmed to exist on the Windows endpoint. Multiple incorrect password attempts were generated and recorded as Event ID 4625 in Windows Security Logs. The same activity was analyzed in Splunk, where failed logon events were counted by account name.
+
+
+Evidence Summary:
+1. Windows logon auditing was enabled.
+2. The account soc_test existed on Windows-SOC-Lab.
+3. Multiple failed login attempts were generated.
+4. Event Viewer showed Event ID 4625 failed logon events.
+5. Splunk counted 10 failed logon events for soc_test.
+6. Detection logic identified the account because it had 5 or more failed logons.
+
+
+Key Finding:
+The account soc_test experienced repeated failed logon attempts. This pattern may indicate brute-force activity, password guessing, or unauthorized access attempts.
+
+
+Impact:
+No successful unauthorized login was confirmed in this lab. However, repeated failed logons against a valid account can increase the risk of account compromise.
+
+
+Containment Actions:
+1. Confirm whether the activity was expected.
+2. Review the affected account.
+3. Temporarily disable the account if suspicious.
+4. Check if other accounts were targeted.
+5. Preserve Windows and Splunk evidence.
+
+
+Recommendations:
+1. Enable account lockout policy.
+2. Use strong password requirements.
+3. Enable multi-factor authentication where possible.
+4. Monitor Event ID 4625.
+5. Create SIEM alerts for repeated failed logons.
+6. Review user accounts regularly.
+7. Disable unused or temporary accounts.
+
+
+Conclusion:
+This incident response lab demonstrated how to investigate repeated failed login attempts using Windows Security Logs and Splunk. The activity was classified as a medium-severity possible brute-force or password guessing attempt. The lab showed the full SOC process of detection, triage, timeline creation, evidence review, containment recommendation, and final reporting.

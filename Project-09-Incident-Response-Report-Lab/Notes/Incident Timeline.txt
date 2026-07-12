@@ -1,0 +1,48 @@
+﻿Incident Timeline
+
+
+Incident Title:
+Multiple Failed Login Attempts Against soc_test
+
+
+Timeline:
+
+
+1. Audit Policy Confirmed
+Windows logon auditing was confirmed as enabled for Success and Failure events.
+
+
+2. Test Account Confirmed
+The local user account soc_test was confirmed on the Windows endpoint.
+
+
+3. Failed Login Attempts Generated
+Multiple incorrect password attempts were generated using the runas command.
+
+
+4. Windows Security Logs Reviewed
+Event Viewer was used to review Windows Security Logs.
+
+
+5. Failed Logon Events Identified
+Event ID 4625 events were found in the Security log.
+
+
+6. Splunk Analysis Performed
+The Windows security event data was uploaded into Splunk for SIEM-style analysis.
+
+
+7. Failed Logons Counted
+Splunk showed 10 failed logon events for the account soc_test.
+
+
+8. Detection Logic Applied
+A Splunk search was used to identify accounts with 5 or more failed login attempts.
+
+
+9. Incident Classified
+The activity was classified as a possible brute-force or password guessing attempt.
+
+
+10. Recommendation Created
+Recommended actions included investigation, account review, monitoring, account lockout policy review, and MFA consideration.

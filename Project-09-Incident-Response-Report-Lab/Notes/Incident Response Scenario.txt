@@ -1,0 +1,37 @@
+﻿Incident Response Scenario
+
+
+Incident Title:
+Multiple Failed Login Attempts Against Local User Account
+
+
+Incident Type:
+Brute-force / password guessing attempt
+
+
+Affected System:
+Windows-SOC-Lab
+
+
+Affected Account:
+soc_test
+
+
+Detection Source:
+Windows Security Logs and Splunk SIEM
+
+
+Related Event ID:
+4625 - Failed Logon
+
+
+Summary:
+Multiple failed login attempts were detected against the local user account soc_test. The activity was first observed in Windows Event Viewer and later confirmed in Splunk, where 10 failed logon events were counted for the same account.
+
+
+Initial Assessment:
+The repeated failed logon attempts may indicate password guessing, brute-force activity, or an unauthorized access attempt. The activity should be investigated and documented.
+
+
+Severity:
+Medium

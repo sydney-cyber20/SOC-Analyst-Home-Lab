@@ -1,0 +1,63 @@
+﻿Evidence Summary
+
+
+Incident Title:
+Multiple Failed Login Attempts Against soc_test
+
+
+Evidence Collected:
+
+
+1. Windows Audit Policy
+Logon auditing was enabled for Success and Failure events.
+Screenshot:
+01-audit-policy-enabled.png
+
+
+2. Test User Confirmation
+The account soc_test was confirmed on Windows-SOC-Lab.
+Screenshot:
+02-test-user-confirmed.png
+
+
+3. Failed Login Attempts
+Multiple failed login attempts were generated using the runas command.
+Screenshot:
+03-failed-login-attempts-generated.png
+
+
+4. Windows Event Viewer Evidence
+Windows Security Logs were filtered for Event ID 4625.
+Screenshot:
+04-security-log-filter-4625.png
+
+
+5. Multiple Failed Logons
+Multiple Event ID 4625 failed logon events were detected.
+Screenshot:
+05-multiple-failed-logons-detected.png
+
+
+6. Event 4625 Details
+One failed logon event showed:
+Account Name: soc_test
+Failure Reason: Unknown user name or bad password
+Computer: Windows-SOC-Lab
+Screenshot:
+06-event-4625-details.png
+
+
+7. Splunk SIEM Evidence
+Splunk counted 10 failed logon events for soc_test.
+Screenshot:
+07-stats-count-by-account.png
+
+
+8. Detection Logic
+Splunk detection logic identified soc_test because it had 5 or more failed logons.
+Screenshot:
+08-brute-force-pattern-detected.png
+
+
+Evidence Conclusion:
+The evidence supports the finding that multiple failed logon attempts occurred against the account soc_test. This pattern may indicate brute-force activity or password guessing.

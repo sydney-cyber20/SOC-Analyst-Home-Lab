@@ -1,0 +1,54 @@
+﻿Alert Triage Notes
+
+
+Alert Name:
+Multiple Failed Login Attempts
+
+
+Detection Source:
+Splunk SIEM and Windows Security Event Logs
+
+
+Observed Event:
+Event ID 4625 - Failed Logon
+
+
+Affected Account:
+soc_test
+
+
+Affected Host:
+Windows-SOC-Lab
+
+
+Observed Pattern:
+10 failed logon attempts were detected against the same user account.
+
+
+Triage Questions:
+1. Is the account valid?
+Yes. The account soc_test exists in the Windows lab environment.
+
+
+2. Was the activity expected?
+Yes, in the lab it was generated for testing. In a real environment, this would need confirmation from the user or IT team.
+
+
+3. Were multiple failures seen?
+Yes. Multiple failed logons were identified in Event Viewer and Splunk.
+
+
+4. Was there a successful login after the failures?
+This should be checked in the Security logs using Event ID 4624.
+
+
+5. Could this indicate brute-force activity?
+Yes. Repeated failed logons against one account can indicate password guessing or brute-force behavior.
+
+
+Initial Triage Decision:
+The alert should be treated as suspicious until confirmed as expected activity.
+
+
+Severity:
+Medium

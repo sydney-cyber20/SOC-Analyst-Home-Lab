@@ -1,0 +1,36 @@
+Recommendations and Containment
+
+
+Incident Title:
+Multiple Failed Login Attempts Against soc_test
+
+
+Severity:
+Medium
+
+
+Containment Actions:
+1. Confirm whether the failed login attempts were expected or authorized.
+2. Review the affected account soc_test.
+3. Temporarily disable the account if the activity is suspicious.
+4. Check whether other user accounts were targeted.
+5. Review the source of the failed login attempts.
+6. Preserve Windows Event Viewer and Splunk evidence.
+
+
+Recommended Security Improvements:
+1. Enable account lockout policy after repeated failed login attempts.
+2. Use strong password requirements.
+3. Enable multi-factor authentication where possible.
+4. Monitor Event ID 4625 for repeated failed logons.
+5. Create SIEM alerts for multiple failed logons from the same account.
+6. Review user accounts regularly.
+7. Disable unused or temporary accounts.
+
+
+SOC Analyst Recommendation:
+This incident should be investigated as a possible brute-force or password guessing attempt. The affected account should be reviewed, failed logon activity should be monitored, and account lockout controls should be considered.
+
+
+Final Recommendation:
+If this activity occurred in a real environment, the SOC team should escalate the alert for review, confirm whether the activity was legitimate, and apply containment actions if unauthorized access is suspected./
