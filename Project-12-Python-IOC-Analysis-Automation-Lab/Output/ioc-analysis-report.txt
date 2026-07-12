@@ -1,0 +1,30 @@
+IOC Analysis Report
+
+Input File:
+sample-security-alert.txt
+
+IP Addresses Found:
+- 185.199.108.1
+- 102.45.12.8
+
+Email Addresses Found:
+- support@paypa1-security.example.com
+- admin-alerts@unknown-example.org
+
+URLs Found:
+- hxxps://paypa1-security.example.com/login/verify-account
+- hxxp://malicious-update.example.net/download
+
+Domains Found:
+- paypa1-security.example.com
+- malicious-update.example.net
+- unknown-example.org
+
+Summary:
+Total IP Addresses: 2
+Total Email Addresses: 2
+Total URLs: 2
+Total Domains: 3
+
+Analyst Note:
+These indicators should be reviewed during a security investigation. Suspicious domains, URLs, IP addresses, and email addresses can be used for threat hunting, phishing analysis, and SOC investigations.

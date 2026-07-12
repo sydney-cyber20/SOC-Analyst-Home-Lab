@@ -1,0 +1,39 @@
+﻿Security Alert Notes
+
+
+A suspicious phishing email was reported by a user. The email claimed to be from a payment provider and asked the user to verify their account.
+
+
+Observed Indicators:
+
+
+Sender Email:
+support@paypa1-security.example.com
+
+
+Suspicious URL:
+hxxps://paypa1-security.example.com/login/verify-account
+
+
+Suspicious Domain:
+paypa1-security.example.com
+
+
+Source IP Address:
+185.199.108.1
+
+
+Cloud Login Source IP:
+102.45.12.8
+
+
+Additional Suspicious URL:
+hxxp://malicious-update.example.net/download
+
+
+Additional Email:
+admin-alerts@unknown-example.org
+
+
+Analyst Notes:
+The indicators above should be extracted and reviewed. The domain paypa1-security.example.com appears suspicious because it imitates a known payment brand. The IP address 185.199.108.1 was also seen in unknown user cloud login attempts.

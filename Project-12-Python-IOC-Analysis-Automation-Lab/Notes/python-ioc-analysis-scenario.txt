@@ -1,0 +1,28 @@
+﻿Python IOC Analysis Automation Scenario
+
+
+Company Name:
+Sydney Cyber Lab
+
+
+Scenario:
+Sydney Cyber Lab receives security indicators from different sources such as phishing emails, cloud audit logs, endpoint alerts, and suspicious network traffic. The SOC team wants a simple Python script that can read a text file, identify possible indicators of compromise, and save the results into an output report.
+
+
+Indicators of Compromise Reviewed:
+1. IP addresses
+2. Domains
+3. URLs
+4. Email addresses
+
+
+Purpose:
+The purpose of this project is to demonstrate basic cybersecurity automation using Python. The script will read a sample security text file, extract possible IOCs, and create a simple IOC analysis report.
+
+
+Why This Matters:
+SOC analysts often review logs, alerts, and reports manually. Python automation can help analysts work faster by extracting useful security indicators from large amounts of text.
+
+
+Risk Level:
+Low
