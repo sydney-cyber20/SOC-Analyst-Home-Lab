@@ -1,0 +1,60 @@
+﻿Splunk SIEM Log Analysis Report
+
+
+Case Summary:
+A Windows security event CSV file was uploaded into Splunk for analysis. The dataset contained successful and failed Windows logon events from a lab machine named Windows-SOC-Lab.
+
+
+Objective:
+The goal was to use Splunk as a SIEM-style tool to search security logs, identify failed logon events, count failures by account, and detect a possible brute-force pattern.
+
+
+Data Source:
+windows-security-events.csv
+
+
+Tool Used:
+Splunk Enterprise
+
+
+Search 1: Failed Logon Events
+index=* sourcetype=csv Failed
+
+
+Result:
+Splunk returned 10 failed logon events related to the account soc_test.
+
+
+Search 2: Count Failed Logons by Account
+index=* sourcetype=csv Failed
+| stats count by account_name
+
+
+Result:
+soc_test had 10 failed logon events.
+
+
+Search 3: Brute Force Detection Logic
+index=* sourcetype=csv Failed
+| stats count by account_name
+| where count >= 5
+
+
+Result:
+The account soc_test matched the detection rule because it had 10 failed login attempts.
+
+
+Key Finding:
+Multiple failed logon attempts were detected against the same account. This pattern may indicate password guessing, brute-force activity, or an unauthorized access attempt.
+
+
+Risk Level:
+Medium
+
+
+SOC Analyst Recommendation:
+Investigate the source of the failed logons, confirm whether the activity was expected, check for other affected accounts, review account lockout policy, and consider MFA for stronger protection.
+
+
+Conclusion:
+This lab demonstrated how Splunk can be used to ingest security logs, search for failed logon events, count suspicious activity by account, and identify a brute-force pattern using SPL.

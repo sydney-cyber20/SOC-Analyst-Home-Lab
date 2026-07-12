@@ -1,0 +1,13 @@
+﻿timestamp,event_id,event_type,account_name,computer,source_host,logon_type,failure_reason,status
+2026-07-10 13:05:23,4625,Failed Logon,soc_test,Windows-SOC-Lab,Windows-SOC-Lab,2,Unknown user name or bad password,Failure
+2026-07-10 13:06:45,4625,Failed Logon,soc_test,Windows-SOC-Lab,Windows-SOC-Lab,2,Unknown user name or bad password,Failure
+2026-07-10 13:07:15,4625,Failed Logon,soc_test,Windows-SOC-Lab,Windows-SOC-Lab,2,Unknown user name or bad password,Failure
+2026-07-10 13:07:52,4625,Failed Logon,soc_test,Windows-SOC-Lab,Windows-SOC-Lab,2,Unknown user name or bad password,Failure
+2026-07-10 13:08:38,4625,Failed Logon,soc_test,Windows-SOC-Lab,Windows-SOC-Lab,2,Unknown user name or bad password,Failure
+2026-07-10 13:09:24,4625,Failed Logon,soc_test,Windows-SOC-Lab,Windows-SOC-Lab,2,Unknown user name or bad password,Failure
+2026-07-10 13:10:12,4625,Failed Logon,soc_test,Windows-SOC-Lab,Windows-SOC-Lab,2,Unknown user name or bad password,Failure
+2026-07-10 13:11:03,4625,Failed Logon,soc_test,Windows-SOC-Lab,Windows-SOC-Lab,2,Unknown user name or bad password,Failure
+2026-07-10 13:12:40,4625,Failed Logon,soc_test,Windows-SOC-Lab,Windows-SOC-Lab,2,Unknown user name or bad password,Failure
+2026-07-10 13:13:55,4625,Failed Logon,soc_test,Windows-SOC-Lab,Windows-SOC-Lab,2,Unknown user name or bad password,Failure
+2026-07-10 13:15:20,4624,Successful Logon,Windows-Soc-Lab,Windows-SOC-Lab,Windows-SOC-Lab,2,Successful logon,Success
+2026-07-10 13:16:10,4624,Successful Logon,Windows-Soc-Lab,Windows-SOC-Lab,Windows-SOC-Lab,2,Successful logon,Success
