@@ -1,0 +1,57 @@
+﻿Windows User and Group Management Analysis Report
+
+
+Case Summary:
+This lab demonstrated basic Windows local user and group management using Administrator Command Prompt and PowerShell. The goal was to create users, create a security group, assign group membership, reset a password, disable a user account, and verify the final account status.
+
+
+Lab Activity:
+Two local users were created:
+analyst_user
+temp_contractor
+
+
+A local security group was created:
+SOC_Team
+
+
+The user analyst_user was added to the SOC_Team group. The temp_contractor account password was reset and the account was later disabled.
+
+
+Commands Used:
+net user analyst_user P@ssw0rd123! /add
+net user temp_contractor TempP@ss123! /add
+net localgroup SOC_Team /add
+net localgroup SOC_Team analyst_user /add
+net user temp_contractor NewTempP@ss456!
+net user temp_contractor /active:no
+
+
+Verification:
+PowerShell was used to confirm that analyst_user was a member of SOC_Team. It also confirmed that analyst_user was enabled and temp_contractor was disabled.
+
+
+Key Findings:
+1. analyst_user was successfully created.
+2. temp_contractor was successfully created.
+3. SOC_Team group was successfully created.
+4. analyst_user was added to SOC_Team.
+5. temp_contractor password was reset.
+6. temp_contractor account was disabled.
+7. Final verification confirmed correct user and group status.
+
+
+Why This Matters:
+User and group management is important for access control, identity management, onboarding, offboarding, and security operations. Disabling unused or temporary accounts reduces the risk of unauthorized access.
+
+
+Risk Level:
+Low
+
+
+SOC / IT Support Recommendation:
+Follow the principle of least privilege, review group membership regularly, disable accounts that are no longer needed, and document all user account changes.
+
+
+Conclusion:
+This lab demonstrated beginner identity and access management skills using Windows local users, groups, password reset, account disabling, and verification commands.
