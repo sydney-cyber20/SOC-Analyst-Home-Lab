@@ -1,0 +1,61 @@
+﻿Access Control Policy
+
+
+Company Name:
+Sydney Cyber Lab
+
+
+Policy Purpose:
+The purpose of this policy is to ensure that only authorized users have access to company systems, accounts, data, and security tools.
+
+
+Policy Scope:
+This policy applies to all users, administrator accounts, endpoints, business data, and security monitoring systems used by Sydney Cyber Lab.
+
+
+Access Control Principles:
+1. Users must only have access to systems and data required for their role.
+2. Administrator access must be limited to approved users only.
+3. Shared accounts should not be used.
+4. User access must be reviewed regularly.
+5. Temporary accounts must be disabled when no longer needed.
+6. Disabled or unused accounts must be reviewed and removed where appropriate.
+7. Access changes must be documented.
+
+
+User Account Management:
+New user accounts must be created only when approved. Each user must have a unique account.
+
+
+Administrator Accounts:
+Administrator accounts must be protected with strong passwords and multi-factor authentication where possible.
+
+
+Least Privilege:
+Users must be given the lowest level of access needed to perform their duties.
+
+
+Account Review:
+User accounts and group memberships should be reviewed regularly to identify unnecessary access.
+
+
+Account Disablement:
+Accounts for users who leave the organization or no longer require access must be disabled immediately.
+
+
+Monitoring:
+Security teams should monitor failed login attempts, unusual login activity, and unauthorized access attempts.
+
+
+Related Security Logs:
+Event ID 4625 - Failed Logon
+Event ID 4624 - Successful Logon
+Event ID 4720 - User Account Created
+
+
+Policy Review:
+This policy should be reviewed regularly to ensure access control remains effective.
+
+
+Conclusion:
+Strong access control reduces the risk of unauthorized access, account misuse, data exposure, and privilege abuse.

@@ -1,0 +1,69 @@
+﻿Final GRC Summary Report
+
+
+Company Name:
+Sydney Cyber Lab
+
+
+Project Title:
+GRC Risk Register and Security Policy Lab
+
+
+Purpose:
+The purpose of this project was to identify cybersecurity risks, document them in a risk register, rate their severity, recommend controls, and create basic security policies for a small lab organization.
+
+
+GRC Scenario:
+Sydney Cyber Lab uses Windows endpoints, local user accounts, email, internet access, security logs, Windows Event Viewer, and Splunk SIEM. The organization wants to improve governance, risk management, and compliance.
+
+
+Assets Reviewed:
+1. Windows endpoints
+2. User accounts
+3. Administrator accounts
+4. Email accounts
+5. Security logs
+6. Network traffic
+7. Business data
+
+
+Main Risks Identified:
+1. Weak passwords
+2. Repeated failed login attempts
+3. Phishing emails
+4. Unused or disabled accounts not reviewed
+5. Lack of MFA
+6. Poor log monitoring
+7. Unauthorized access
+
+
+Risk Register Summary:
+High severity risks included weak passwords, phishing emails, lack of MFA, poor log monitoring, and unauthorized access.
+Medium severity risks included repeated failed login attempts and unused accounts not being reviewed.
+
+
+Policies Created:
+1. Password Security Policy
+2. Access Control Policy
+3. Log Monitoring Policy
+
+
+Recommended Controls:
+1. Use strong password requirements.
+2. Enable multi-factor authentication where possible.
+3. Enable account lockout policy.
+4. Monitor Event ID 4625 for repeated failed logons.
+5. Review user accounts and group memberships regularly.
+6. Disable unused or temporary accounts.
+7. Monitor Windows Security Logs and SIEM alerts.
+8. Train users to identify phishing emails.
+9. Apply least privilege access.
+10. Document security incidents and preserve evidence.
+
+
+GRC Value:
+This project shows how cybersecurity governance, risk management, and compliance help reduce business risk. It also shows how security policies and risk registers support better decision-making and stronger security controls.
+
+
+Conclusion:
+This lab demonstrated beginner GRC skills by identifying cybersecurity risks, rating their severity, recommending controls, and creating basic security policies. The project supports junior GRC, cybersecurity analyst, risk analyst, and compliance assistant roles.

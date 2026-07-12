@@ -1,0 +1,185 @@
+﻿Cybersecurity Risk Register
+
+
+Company Name:
+Sydney Cyber Lab
+
+
+Risk 1:
+Weak passwords
+
+
+Asset Affected:
+User accounts
+
+
+Impact:
+Unauthorized access to systems or accounts
+
+
+Likelihood:
+High
+
+
+Severity:
+High
+
+
+Recommended Control:
+Use strong password rules and enable multi-factor authentication.
+
+
+
+
+Risk 2:
+Repeated failed login attempts
+
+
+Asset Affected:
+Windows endpoints and user accounts
+
+
+Impact:
+Possible brute-force attack or password guessing
+
+
+Likelihood:
+Medium
+
+
+Severity:
+Medium
+
+
+Recommended Control:
+Enable account lockout policy and monitor Event ID 4625.
+
+
+
+
+Risk 3:
+Phishing emails
+
+
+Asset Affected:
+Email accounts and users
+
+
+Impact:
+Credential theft, malware infection, or account compromise
+
+
+Likelihood:
+High
+
+
+Severity:
+High
+
+
+Recommended Control:
+Train users to identify phishing emails and report suspicious messages.
+
+
+
+
+Risk 4:
+Unused or disabled accounts not reviewed
+
+
+Asset Affected:
+User accounts
+
+
+Impact:
+Old accounts may be abused by attackers
+
+
+Likelihood:
+Medium
+
+
+Severity:
+Medium
+
+
+Recommended Control:
+Review user accounts regularly and disable accounts that are no longer needed.
+
+
+
+
+Risk 5:
+Lack of MFA
+
+
+Asset Affected:
+User accounts and administrator accounts
+
+
+Impact:
+Accounts are easier to compromise if passwords are stolen
+
+
+Likelihood:
+High
+
+
+Severity:
+High
+
+
+Recommended Control:
+Enable multi-factor authentication for all important accounts.
+
+
+
+
+Risk 6:
+Poor log monitoring
+
+
+Asset Affected:
+Security logs and endpoints
+
+
+Impact:
+Security incidents may go undetected
+
+
+Likelihood:
+Medium
+
+
+Severity:
+High
+
+
+Recommended Control:
+Monitor Windows Event Logs and SIEM alerts regularly.
+
+
+
+
+Risk 7:
+Unauthorized access
+
+
+Asset Affected:
+Business data and systems
+
+
+Impact:
+Data theft, system misuse, or business disruption
+
+
+Likelihood:
+Medium
+
+
+Severity:
+High
+
+
+Recommended Control:
+Apply least privilege access and review permissions regularly.

@@ -1,0 +1,63 @@
+﻿Log Monitoring Policy
+
+
+Company Name:
+Sydney Cyber Lab
+
+
+Policy Purpose:
+The purpose of this policy is to ensure that security logs are collected, reviewed, and monitored to detect suspicious activity, unauthorized access, and possible security incidents.
+
+
+Policy Scope:
+This policy applies to Windows endpoints, user accounts, administrator accounts, security logs, and monitoring tools used by Sydney Cyber Lab.
+
+
+Logs to Monitor:
+1. Windows Security Logs
+2. Failed logon events
+3. Successful logon events
+4. User account creation events
+5. Administrator account activity
+6. Security tool alerts
+7. SIEM alerts
+
+
+Important Event IDs:
+Event ID 4625 - Failed Logon
+Event ID 4624 - Successful Logon
+Event ID 4720 - User Account Created
+Event ID 4672 - Special Logon
+
+
+Monitoring Requirements:
+1. Failed login attempts must be reviewed regularly.
+2. Multiple failed logons against the same account must be investigated.
+3. Successful logons after repeated failures must be reviewed.
+4. New user account creation must be checked for authorization.
+5. Administrator activity must be monitored.
+6. SIEM alerts must be reviewed and documented.
+
+
+Alert Examples:
+1. Five or more failed logons against the same account.
+2. Multiple failed logons followed by a successful login.
+3. New user account created without approval.
+4. Login activity from unusual systems or locations.
+5. Repeated access attempts to restricted systems.
+
+
+Incident Response:
+Suspicious log activity must be documented, investigated, and escalated if unauthorized access is suspected.
+
+
+Evidence Handling:
+Important logs and screenshots must be preserved during investigations.
+
+
+Policy Review:
+This policy should be reviewed regularly to ensure monitoring remains effective.
+
+
+Conclusion:
+Log monitoring helps detect brute-force attacks, unauthorized access, account misuse, and other suspicious security activity.

@@ -1,0 +1,37 @@
+﻿GRC Risk Scenario
+
+
+Company Name:
+Sydney Cyber Lab
+
+
+Scenario:
+Sydney Cyber Lab is a small organization that uses Windows endpoints, local user accounts, email, internet access, and security monitoring tools such as Windows Event Viewer and Splunk.
+
+
+The organization wants to improve its cybersecurity governance, risk management, and compliance practices.
+
+
+Business Assets:
+1. Windows endpoints
+2. User accounts
+3. Email accounts
+4. Security logs
+5. Network traffic
+6. Business data
+7. Administrator accounts
+
+
+Main Security Concerns:
+1. Weak passwords
+2. Repeated failed login attempts
+3. Phishing emails
+4. Unused or disabled accounts
+5. Lack of MFA
+6. Poor log monitoring
+7. Unauthorized access
+8. Lack of documented security policies
+
+
+GRC Objective:
+The goal of this project is to identify cybersecurity risks, document them in a risk register, rate their severity, recommend controls, and create basic security policies.
