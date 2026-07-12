@@ -1,0 +1,51 @@
+﻿Network Traffic Analysis Report
+
+
+Case Summary:
+This lab demonstrated basic network traffic capture and analysis using Wireshark. Traffic was generated using ping and nslookup commands against example.com, then analyzed using Wireshark display filters.
+
+
+Lab Activity:
+Wireshark was opened on macOS and packet capture was started on the active Wi-Fi interface. Network traffic was generated using ICMP ping and DNS lookup commands.
+
+
+Commands Used:
+ping -c 4 example.com
+nslookup example.com
+
+
+Traffic Observed:
+1. DNS traffic was captured and filtered using the dns display filter.
+2. ICMP traffic was captured and filtered using the icmp display filter.
+3. Source and destination IP addresses were reviewed inside the IPv4 packet details.
+4. A specific IP address filter was used to isolate traffic involving 104.20.23.154.
+
+
+Wireshark Filters Used:
+dns
+icmp
+ip.addr == 104.20.23.154
+
+
+Key Findings:
+Source IP Address: 192.168.1.101
+Destination IP Address: 104.20.23.154
+Protocol Observed: ICMP
+DNS Server Observed: 192.168.1.1
+Traffic Type: DNS queries, DNS responses, ICMP echo requests, and ICMP echo replies
+
+
+Why This Matters:
+Network traffic analysis helps SOC analysts and IT support teams understand communication between devices. It can be used to investigate suspicious connections, malware communication, DNS activity, network troubleshooting, and data flow between internal and external systems.
+
+
+Risk Level:
+Low
+
+
+SOC Analyst Recommendation:
+In a real investigation, review unusual destination IPs, confirm whether the domain or IP is expected, check DNS queries for suspicious domains, and compare traffic against known indicators of compromise.
+
+
+Conclusion:
+This lab demonstrated beginner network traffic analysis skills using Wireshark. It showed how to capture traffic, apply filters, identify DNS and ICMP packets, and analyze source and destination IP addresses.
